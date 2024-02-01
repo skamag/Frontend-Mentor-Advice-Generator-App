@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'manrope';
+  }
+  body{
+    background-color: hsl(218, 23%, 16%);
+  }
+  .container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main{
+    background-color: hsl(217, 19%, 24%);
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+  .adviceId{
+    color:hsl(150, 100%, 66%);
+  }
+  .adviceText{
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    text-align: center;
+  }
+  .mobileDivider, .desktopDivider{
+    width: 100%;
+  }
+  .desktopDivider{
+    display: block;
+  }
+  .mobileDivider{
+    display: none;
+  }
+  .dice{
+    background-image: url(./images/icon-dice.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: hsl(150, 100%, 66%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    border: none;
+  }
+  .dice:hover{
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+  }
+  .attribution{
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a{
+    color: hsl(228, 45%, 44%);
+  }
+  @media screen and (max-width: 768px) {
+    main{
+      width: 90%;
+    }
+    .desktopDivider{
+      display: none;
+    }
+    .mobileDivider{
+      display: block;
+    }
+  }
